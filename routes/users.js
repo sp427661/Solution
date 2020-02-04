@@ -28,12 +28,11 @@ router.post('/signup', (req, res, next) => {
         res.setHeader('Content-Type', 'application/json');
         res.json({success: true, status: 'Registration Successful!'});
       });
-    }
-  });
+    }  });
 });
 
 
-
+/*
 router.post('/login', passport.authenticate('local'),function(req,res)
 {
   var token = authenticate.getToken({_id: req.user._id});
@@ -43,6 +42,10 @@ router.post('/login', passport.authenticate('local'),function(req,res)
   
 
 });
+
+*/
+
+
 
 
 router.get('/logout', (req, res) => {
